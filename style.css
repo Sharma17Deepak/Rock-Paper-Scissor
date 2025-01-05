@@ -39,12 +39,45 @@ img{
   margin-top: 5rem;
 }
 
+.class-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6px solid #ccc;
+    border-top: 6px solid #333;
+    margin-top: 2rem;
+}
+
+@keyframes spinAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#you{
+    background-color: green;
+    border-radius: 5px;
+}
+#comp{
+    background-color: red;
+    border-radius: 5px;
+}
+
 .score-board {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    margin-top: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
     gap: 5rem;
 }
 
@@ -62,4 +95,52 @@ img{
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.reset-btn{
+    
+    display: inline-block;
+    margin-top: 2rem;
+}
+#reset{
+    width: 90px;
+    height: 40px;
+    background-color:#081b31;
+    border-radius: 30px;
+    color: azure;
+
+}
+
+@media (max-width:500px) {
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    .choice{
+        height: 120px;
+        width: 120px;
+        margin: -1.5rem;
+    }
+    .msg-container{
+        margin-top: 6rem;
+    }
+    #msg {
+        font-size: 1.5rem;
+        width: 10px;
+    }
+    .score-board{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+    #user-score, #comp-score {
+        font-size: 4rem;
+    }
+    .reset-btn{
+        margin-top: 5rem;
+    }
+    .choice:hover {
+        cursor: pointer;
+        background-color: #081b31;
+    }
+
 }
